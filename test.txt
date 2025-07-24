@@ -1,0 +1,45 @@
+Steps to Create and Merge a Branch into dev in Git
+Creating a New Branch
+
+To create a new branch and switch to it:
+
+```
+git checkout -b <branch-name>
+Replace <branch-name> with your desired name (e.g., feature1).
+
+```
+
+Merging Your Branch into dev
+
+Switch to the dev branch:
+```
+git checkout dev
+Pull the latest updates for dev:
+
+```
+
+```
+git pull
+Merge your feature branch into dev:
+
+```
+
+```
+git merge <branch-name>
+Replace <branch-name> with the name of your branch.
+```
+
+Resolve Conflicts (if any):
+
+If there are conflicts, edit the files to resolve them.
+
+After resolving, commit the changes.
+
+Summary Table
+Step	                              Command Example	                             Notes
+Create new branch	                git checkout -b feature1	  Replace feature1 with branch name
+Switch to dev branch	            git checkout dev	          Prepares for merging
+Pull latest dev updates	            git pull	                  Avoids merge conflicts
+Merge branch into dev	            git merge feature1	          Combines changes
+
+These steps help keep your work organized and ensure new features or fixes are safely incorporated into the main dev branch.
